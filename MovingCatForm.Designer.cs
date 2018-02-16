@@ -29,15 +29,59 @@
         private void InitializeComponent()
         {
             this.mnuMenu = new System.Windows.Forms.MenuStrip();
+            this.mniFile = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniCat = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniCat1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mniCat2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mnuMenu.SuspendLayout();
             this.SuspendLayout();
             // 
             // mnuMenu
             // 
+            this.mnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniFile,
+            this.mniCat});
             this.mnuMenu.Location = new System.Drawing.Point(0, 0);
             this.mnuMenu.Name = "mnuMenu";
             this.mnuMenu.Size = new System.Drawing.Size(284, 24);
             this.mnuMenu.TabIndex = 0;
             this.mnuMenu.Text = "menuStrip1";
+            // 
+            // mniFile
+            // 
+            this.mniFile.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniExit});
+            this.mniFile.Name = "mniFile";
+            this.mniFile.Size = new System.Drawing.Size(37, 20);
+            this.mniFile.Text = "File";
+            // 
+            // mniCat
+            // 
+            this.mniCat.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.mniCat1,
+            this.mniCat2});
+            this.mniCat.Name = "mniCat";
+            this.mniCat.Size = new System.Drawing.Size(37, 20);
+            this.mniCat.Text = "Cat";
+            // 
+            // mniExit
+            // 
+            this.mniExit.Name = "mniExit";
+            this.mniExit.Size = new System.Drawing.Size(152, 22);
+            this.mniExit.Text = "Exit";
+            // 
+            // mniCat1
+            // 
+            this.mniCat1.Name = "mniCat1";
+            this.mniCat1.Size = new System.Drawing.Size(152, 22);
+            this.mniCat1.Text = "Cat1";
+            // 
+            // mniCat2
+            // 
+            this.mniCat2.Name = "mniCat2";
+            this.mniCat2.Size = new System.Drawing.Size(152, 22);
+            this.mniCat2.Text = "Cat2";
             // 
             // frmMovingCat
             // 
@@ -48,6 +92,8 @@
             this.MainMenuStrip = this.mnuMenu;
             this.Name = "frmMovingCat";
             this.Text = "Moving Cat by: Finn D";
+            this.mnuMenu.ResumeLayout(false);
+            this.mnuMenu.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,6 +102,11 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip mnuMenu;
+        private System.Windows.Forms.ToolStripMenuItem mniFile;
+        private System.Windows.Forms.ToolStripMenuItem mniExit;
+        private System.Windows.Forms.ToolStripMenuItem mniCat;
+        private System.Windows.Forms.ToolStripMenuItem mniCat1;
+        private System.Windows.Forms.ToolStripMenuItem mniCat2;
     }
 }
 
