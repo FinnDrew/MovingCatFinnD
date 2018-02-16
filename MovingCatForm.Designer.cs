@@ -61,8 +61,9 @@
             // mniExit
             // 
             this.mniExit.Name = "mniExit";
-            this.mniExit.Size = new System.Drawing.Size(92, 22);
+            this.mniExit.Size = new System.Drawing.Size(152, 22);
             this.mniExit.Text = "Exit";
+            this.mniExit.Click += new System.EventHandler(this.mniExit_Click);
             // 
             // mniCat
             // 
@@ -76,14 +77,16 @@
             // mniCat1
             // 
             this.mniCat1.Name = "mniCat1";
-            this.mniCat1.Size = new System.Drawing.Size(98, 22);
+            this.mniCat1.Size = new System.Drawing.Size(152, 22);
             this.mniCat1.Text = "Cat1";
+            this.mniCat1.Click += new System.EventHandler(this.mniCat1_Click);
             // 
             // mniCat2
             // 
             this.mniCat2.Name = "mniCat2";
-            this.mniCat2.Size = new System.Drawing.Size(98, 22);
+            this.mniCat2.Size = new System.Drawing.Size(152, 22);
             this.mniCat2.Text = "Cat2";
+            this.mniCat2.Click += new System.EventHandler(this.mniCat2_Click);
             // 
             // picCat
             // 
